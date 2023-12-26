@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .pixel-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 30px);
+            grid-template-rows: repeat(8, 30px);
+            gap: 1px;
+        }
+
+        .pixel {
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            background-color: white;
+            transition: background-color 0.2s;
+        }
+    </style>
+    <script>
+        function togglePixel(row, col) {
+            var pixel = document.getElementById(`pixel-${row}-${col}`);
+            pixel.style.backgroundColor = pixel.style.backgroundColor === "black" ? "white" : "black";
+        }
+    </script>
+    <title>Grid Page</title>
+</head>
+<body>
+    <div class="pixel-grid">
+        <!-- Ajoute les cellules de la grille avec des identifiants uniques -->
+        <!-- Appelle la fonction togglePixel() lorsqu'une cellule est cliquée -->
+        <!-- La couleur de fond est modifiée en fonction de l'état du pixel -->
+        <div id="pixel-0-0" class="pixel" onclick="togglePixel(0, 0)"></div>
+        <div id="pixel-0-1" class="pixel" onclick="togglePixel(0, 1)"></div>
+        <div id="pixel-0-2" class="pixel" onclick="togglePixel(0, 2)"></div>
+        <div id="pixel-0-3" class="pixel" onclick="togglePixel(0, 3)"></div>
+        <div id="pixel-0-4" class="pixel" onclick="togglePixel(0, 4)"></div>
+
+        <div id="pixel-1-0" class="pixel" onclick="togglePixel(1, 0)"></div>
+        <div id="pixel-1-1" class="pixel" onclick="togglePixel(1, 1)"></div>
+        <div id="pixel-1-2" class="pixel" onclick="togglePixel(1, 2)"></div>
+        <div id="pixel-1-3" class="pixel" onclick="togglePixel(1, 3)"></div>
+        <div id="pixel-1-4" class="pixel" onclick="togglePixel(1, 4)"></div>
+
+        <div id="pixel-2-0" class="pixel" onclick="togglePixel(2, 0)"></div>
+        <div id="pixel-2-1" class="pixel" onclick="togglePixel(2, 1)"></div>
+        <div id="pixel-2-2" class="pixel" onclick="togglePixel(2, 2)"></div>
+        <div id="pixel-2-3" class="pixel" onclick="togglePixel(2, 3)"></div>
+        <div id="pixel-2-4" class="pixel" onclick="togglePixel(2, 4)"></div>
+
+        <div id="pixel-3-0" class="pixel" onclick="togglePixel(3, 0)"></div>
+        <div id="pixel-3-1" class="pixel" onclick="togglePixel(3, 1)"></div>
+        <div id="pixel-3-2" class="pixel" onclick="togglePixel(3, 2)"></div>
+        <div id="pixel-3-3" class="pixel" onclick="togglePixel(3, 3)"></div>
+        <div id="pixel-3-4" class="pixel" onclick="togglePixel(3, 4)"></div>
+
+        <div id="pixel-4-0" class="pixel" onclick="togglePixel(4, 0)"></div>
+        <div id="pixel-4-1" class="pixel" onclick="togglePixel(4, 1)"></div>
+        <div id="pixel-4-2" class="pixel" onclick="togglePixel(4, 2)"></div>
+        <div id="pixel-4-3" class="pixel" onclick="togglePixel(4, 3)"></div>
+        <div id="pixel-4-4" class="pixel" onclick="togglePixel(4, 4)"></div>
+
+        <div id="pixel-5-0" class="pixel" onclick="togglePixel(5, 0)"></div>
+        <div id="pixel-5-1" class="pixel" onclick="togglePixel(5, 1)"></div>
+        <div id="pixel-5-2" class="pixel" onclick="togglePixel(5, 2)"></div>
+        <div id="pixel-5-3" class="pixel" onclick="togglePixel(5, 3)"></div>
+        <div id="pixel-5-4" class="pixel" onclick="togglePixel(5, 4)"></div>
+
+        <div id="pixel-6-0" class="pixel" onclick="togglePixel(6, 0)"></div>
+        <div id="pixel-6-1" class="pixel" onclick="togglePixel(6, 1)"></div>
+        <div id="pixel-6-2" class="pixel" onclick="togglePixel(6, 2)"></div>
+        <div id="pixel-6-3" class="pixel" onclick="togglePixel(6, 3)"></div>
+        <div id="pixel-6-4" class="pixel" onclick="togglePixel(6, 4)"></div>
+
+        <div id="pixel-7-0" class="pixel" onclick="togglePixel(7, 0)"></div>
+        <div id="pixel-7-1" class="pixel" onclick="togglePixel(7, 1)"></div>
+        <div id="pixel-7-2" class="pixel" onclick="togglePixel(7, 2)"></div>
+        <div id="pixel-7-3" class="pixel" onclick="togglePixel(7, 3)"></div>
+        <div id="pixel-7-4" class="pixel" onclick="togglePixel(7, 4)"></div>
+    </div>
+</body>
+</html>
