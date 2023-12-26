@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,7 +32,7 @@
         }
 
         #code-display {
-            clear: both; /* Ajout de cette propriété pour forcer le placement en dessous */
+            clear: both;
         }
     </style>
     <script>
@@ -52,7 +51,6 @@
             for (var i = 0; i < pixels.length; i++) {
                 var rowCode = "";
                 for (var j = 0; j < pixels[i].length; j++) {
-                    // Mise à jour des valeurs de pixels
                     pixels[i][j] = document.getElementById(`pixel-${i}-${j}`).style.backgroundColor === "black" ? 1 : 0;
                     rowCode += pixels[i][j];
                 }
@@ -66,7 +64,6 @@
             codeDisplay.textContent = code;
         }
 
-        // Appel initial de la fonction pour afficher le code au chargement de la page
         window.onload = function () {
             updateCodeDisplay();
         };
@@ -76,9 +73,6 @@
 <body>
     <div class="container">
         <div class="pixel-grid">
-            <!-- Ajoute les cellules de la grille avec des identifiants uniques -->
-            <!-- Appelle la fonction togglePixel() lorsqu'une cellule est cliquée -->
-            <!-- La couleur de fond est modifiée en fonction de l'état du pixel -->
             <div id="pixel-0-0" class="pixel" onclick="togglePixel(0, 0)"></div>
             <div id="pixel-0-1" class="pixel" onclick="togglePixel(0, 1)"></div>
             <div id="pixel-0-2" class="pixel" onclick="togglePixel(0, 2)"></div>
@@ -128,7 +122,6 @@
             <div id="pixel-7-4" class="pixel" onclick="togglePixel(7, 4)"></div>
         </div>
 
-        <!-- Affiche le code à côté de la grille -->
         <div id="code-display"></div>
     </div>
 </body>
