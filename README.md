@@ -7,4 +7,7 @@ Original implementation of custom characters by Juvus: [Custom Characters](https
 
 Streamlit app by Julien Minniti: [Streamlit Custom Characters LCD Generator](https://custom-characters-for-lcd16x2.streamlit.app/)
 
+<p align="center">
+  <img src="img/demo.png" width="75%">
+</p>
 
